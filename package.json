@@ -1,0 +1,19 @@
+{
+  "name": "kolbiceserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "colyseus": "^0.12.6",
+    "express": "^4.17.1",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts"
+  },
+  "author": "Gál Péter (pepyta)",
+  "license": "MIT"
+}

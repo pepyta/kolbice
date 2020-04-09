@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>
+        KolbICE - The game
+    </title>
+
+    <script type="text/javascript" src="https://raw.githack.com/colyseus/colyseus.js/master/dist/colyseus.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/modern.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="row" style="height: 95vh; padding: 0;display: none;" id="game">
+        <div class="section" style="height: calc(100vh - 330px);">
+            <div class="row">
+                <div class="col s8">
+                    <div class="row" id="ingame">
+
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="row" id="players-place">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section" id="cards" style="height: 310px; padding: 0;"></div>
+    </div>
+    <div class="container valign-wrapper" style="height: 100%;" id="login">
+        <div class="row">
+            <div class="col s12 m6 center-align">
+                <img src="img/cards/2.png" class="responsive-img game-card z-depth-1">
+            </div>
+
+            <div class="col s12 m6">
+                <div class="card hoverable" style="margin: 0;">
+                    <div class="card-content">
+                        <div class="card-title">
+                            Csatlakozás játéhoz
+                        </div>
+
+                        <form id="login-form">    
+                            <div class="row" style="margin-bottom: 0;">
+                                <div class="input-field col s12">
+                                    <input type="text" id="username">
+                                    <label for="username">Felhasználónév</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input type="text" id="roomCode">
+                                    <label for="roomCode">Szoba kódja</label>
+                                </div>
+
+                                <div class="input-field col s12 center-align">
+                                    <button class="btn btn-large waves-effect waves-light black white-text" id="joinGame">
+                                        Csatlakozás
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class="center-align">
+                            <button class="btn btn-large waves-effect waves-light black white-text" id="startGame" disabled>
+                                Játék elkezdése
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+</body>
+
+</html>
